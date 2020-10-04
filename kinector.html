@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<head>
+		<title>Kinector</title>
+		<link rel="icon" type="image/png" href="icon.png">
+		<link href="style.css" type="text/css" rel="stylesheet" />
+		<link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500|Mukta:300,400|Oswald:300,500" rel="stylesheet">
+	</head>
+
+	<body>
+		<header class="header proj" id="head">
+				<h1 id="name"><a href="Home.html">EMILY HUANG</a></h1>
+				<div id="nav">
+					<ul>
+						<li id="about"><a href="about.html">ABOUT ME</a></li>
+						<li id="portfolio"><a href="Home.html">ALL PROJECTS</a></li>
+						<hr noshade class="aboutline">
+						<hr noshade class="projline">
+					</ul>
+				</div>
+		</header>
+
+		<div class="hero kinector" id="heroimg">
+			<div class="herotext">
+				<h2 class="herotitle">KINECTOR</h2>
+				<h3 class="herotag">DESIGN RESEARCH</h3>
+			</div>
+		</div>
+
+
+		<div class="sect intro" id="introid">
+			<div class="introtext">
+				<!--tag line?<h3>GIVE LIFE TO LOCATION.<br>COMMUNE WITH THE WORLD.<br>PEER THROUGH THE PAST.</h3>-->
+				<p>Kinector is a wearable device for physical therapy patients to be conscious about their movements throughout the recovery process. It not only reminds patients when their movement is harmful to their injury, but also records when and what they are doing, and this data can later be pulled up to be reviewed by the patients and their physical therapist. It adapts to and integrates into the patients&apos; daily life easily, and puts tools and information in their hands to increase transparency and feedback for both patients and therapists.</p>
+				<!--maybe move team elsewhere-->
+				<p>Collaborated with Alexis Bieda and Jade Granger</p>
+			</div>
+		</div>
+
+		<div class="sect vid">
+			<div class="embed-container">
+				<iframe src="https://player.vimeo.com/video/263089348" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen align="center"></iframe>
+			</div>
+		</div>
+
+		<div class="top introtext detail">
+			<h2 class="subtitle">RESEARCH QUESTION</h2>
+			<p>What are the challenges with communication between patients and physical therapists in translating and discussing the recovery process?</p>
+		</div>
+
+		<div class="top introtext detail">
+			<h2 class="subtitle">INTERVIEWS &amp; INSIGTS</h2>
+			<p>We conducted interviews with four patients of different injuries and four physical therapists of various levels of expertises to understand and analyze the communication between patients and physical therapists, and from the interviews we gathered insights.</p>
+			<div class="insight">
+			<h4>Patients need to be willing to incorporate physical therapy into their everyday lives in order to fully recover</h4>
+			<p>	&quot;Yeah, I still try to go through the same wrist exercises my physical therapist showed me when I was going through physical therapy. Even now, my wrist feels better if I take the time out to do that.&quot; - Patient 1 </p>
+			<h4>Patients fear that physical therapist will require them to change their way of living</h4>
+			<p>&quot;A lot of what I do is managing expectations and fear, so that when I come talk to a patient, it&apos;s not me coming in to make them change, it&apos;s a process of accepting and working with what they can do.&quot; - Physical Therapist 2</p>
+			<h4>Physical therapists and patients need to form a &quot;common language&quot; to discuss subjective experiences</h4>
+			<p>&quot;I loved that my physical therapist was as sarcastic as I was, and that when I talked with him, we like connected over that, and it made it really easy.&quot; - Patient 3</p>
+			<h4>The best physical therapist/patient relationships are built through mutual teamwork and respect</h4>
+			<p>&quot;Physical therapy is really best described as a therapeutic alliance. It&apos;s hard when the patient doesn&apos;t understand they have to contribute as much as the therapist.&quot; - Physical Therapist 1</p>
+		</div>
+		</div>
+		
+		<div class="top introtext detail">
+			<h2 class="subtitle">DESIGN PRINCIPLES</h2>
+			<p>From what we learned from the interviews, we decided to focus on designing a device that will help patients and physical therapists build a common language as well as correcting the patients&apos; daily movements, while carrying out the following design principles that we&apos;ve set.</p>
+			<div class="insight">
+			<h4>COMPASSIONATE</h4>
+			<p>Value and support the emotional cost of the physical therapy process</p>
+			<h4>NATURAL</h4>
+			<p>Integrate the disruptive effects of physical therapy into a patient&apos;s preferred way of life</p>
+			<h4>MOTIVATING</h4>
+			<p>Encourage patients to take an active role in their own recovery</p>
+			<h4>FLEXIBLE</h4>
+			<p>Respect patient&apos;s differences and respond to them</p>
+			<h4>HONEST</h4>
+			<p>Facilitate an open and sincere dialogue between patients and their physical therapist</p>
+		</div>
+		</div>
+
+		<div class="top introtext detail">
+			<h2 class="subtitle">PROTOTYPE &amp; TESTING</h2>
+			<p>Our prototype had LED lights that would light up when the patients move incorrectly, and would prompt them with voice output to record what they feel, and build the common language. However, when we tested the prototype, the participants found that the voice interaction distracting and interrupting their daily tasks, and therefore, we decided to focus on just correcting movements and tracking their daily progress. We also decided to use a subtle vibration instead of LED to remind patients.</p>
+		</div>
+
+		<div class="top introtext detail">
+			<h2 class="subtitle">SKETCHES</h2>
+			<p>Different concepts and sketches for the final wearable device.</p>
+		</div>
+		<div class="sketch">
+			<img src="img/kinector-sketches.jpg" alt="Sketches"/>
+		</div>
+
+		<div class="top introtext detail">
+			<h2 class="subtitle">FINAL DESIGN</h2>
+		</div>
+		<div class="sketch">
+			<img src="img/kinector-render.jpg" alt="render" id="bottom"/>
+		</div>
+
+		<div id="footer">
+			<p>&copy; Emily Huang</p>
+		</div>
+
+		<script>
+			window.onscroll = function() {textColor()};
+
+			var header = document.getElementById("head");
+			var intro = document.getElementById("introid");
+			var sticky = intro.offsetTop-500;
+
+			function textColor() {
+				if (window.pageYOffset > sticky) {
+					header.classList.remove("proj");
+				} else {
+					header.classList.add("proj");
+				}
+			}
+		</script>
+	</body>
+</html>

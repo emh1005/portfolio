@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<head>
+		<title>SecureMe</title>
+		<link rel="icon" type="image/png" href="icon.png">
+		<link href="style.css" type="text/css" rel="stylesheet" />
+		<link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500|Mukta:300,400|Oswald:300,500" rel="stylesheet">
+	</head>
+
+	<body>
+		<header class="header proj" id="head">
+				<h1 id="name"><a href="Home.html">EMILY HUANG</a></h1>
+				<div id="nav">
+					<ul>
+						<li id="about"><a href="about.html">ABOUT ME</a></li>
+						<li id="portfolio"><a href="Home.html">ALL PROJECTS</a></li>
+						<hr noshade class="aboutline">
+						<hr noshade class="projline">
+					</ul>
+				</div>
+		</header>
+
+		<div class="hero secureme" id="heroimg">
+			<div class="herotext">
+				<h2 class="herotitle">SECUREME</h2>
+				<h3 class="herotag">INTERACTION DESIGN</h3>
+			</div>
+		</div>
+
+		<div class="sect intro" id="introid">
+			<div class="introtext">
+				<p>SecureMe provides a security system for AirBnb hosts and guests. With SecureMe, hosts would feel more comfortable managing their properties, and guests would feel safer and in control in an unfamiliar environment. This is an ecosystem of different interfaces, allowing multiple types of interactions.</p>
+				<!--maybe move team elsewhere-->
+				<p>Collaborated with Johnny Knusten and Veslava Ovendale</p>
+			</div>
+		</div>
+
+		<div class="sect vid">
+			<div class="embed-container">
+				<iframe src="https://player.vimeo.com/video/220257840" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen align="center"></iframe>
+			</div>
+		</div>
+
+		<div class="top introtext detail">
+			<h2 class="subtitle">AUDIO INTERFACE</h2>
+			<p>The guests are greeted with the voice interface when they first enter the home, and it is also a voice assistant for guests. The audio system acts as the alarm system as well, when the sensors around the home detect unauthorized attempts to enter.</p>
+		</div>
+
+		<div class="top introtext detail">
+			<h2 class="subtitle">MAIN INTERFACE</h2>
+			<p>The main interface is normally located in easily accessible place in the home, allowing guests use with ease. It features two main views: the floor plan of the home, and a map around the house.</p>
+		</div>
+		<div class="function">
+			<img src="img/secureme-main1.png" alt="Lights & Locks"/>
+			<span> <hr noshade /></span>
+			<h3>LIGHTS &amp; LOCKS</h3>
+			<p>Guests can control lights and locks remotely with the main interface. This also allows guests to familiarize with the locations of the lights and locks in the home.</p>
+		</div>
+		<div class="function right">
+			<img src="img/secureme-main2.png" alt="Secure Places"/>
+			<span> <hr noshade /></span>
+			<h3>SECURE PLACES</h3>
+			<p>Guests can store their valubales in these places in the home that hosts have marked as safes or hidden places.</p>
+		</div>
+		<div class="function">
+			<img src="img/secureme-main3.png" alt="Map"/>
+			<span> <hr noshade /></span>
+			<h3>MAP</h3>
+			<p>Hosts and previous guests are welcomed to leave notes and locations on the map for guests to explore the area as well as avoid certain places in the neighborhood.</p>
+		</div>
+
+		<div class="top introtext detail">
+			<h2 class="subtitle">APP INTERFACE</h2>
+			<p>SecureMe is directly integrated into the AirBnb app, and guests and hosts would both receive notifications from the system. Guests can also access the floor plan view from the main interface from the app during their stay.</p>
+		</div>
+		<div class="function">
+			<img src="img/secureme-app.png" alt="APP"/>
+			<span> <hr noshade /></span>
+			<h3>APP</h3>
+			<p>An added feature to the existing AirBnb app is a thumbprint scan or pin code for guests to access the home without a key.</p>
+		</div>
+
+		<div class="top introtext detail">
+			<h2 class="subtitle">ALERT SYSTEM</h2>
+			<p>When there is an attempted intrusion, the main interface would lockdown, the audio system would deter the intruder away, and the AirBnb app would notify the guests.</p>
+		</div>
+
+		<div id="footer">
+			<p>&copy; Emily Huang</p>
+		</div>
+
+		<script>
+			window.onscroll = function() {textColor()};
+
+			var header = document.getElementById("head");
+			var intro = document.getElementById("introid");
+			var sticky = intro.offsetTop-500;
+
+			function textColor() {
+				if (window.pageYOffset > sticky) {
+					header.classList.remove("proj");
+				} else {
+					header.classList.add("proj");
+				}
+			}
+		</script>
+	</body>
+</html>

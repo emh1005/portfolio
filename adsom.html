@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<head>
+		<title>A Darker Shade of Magic</title>
+		<link rel="icon" type="image/png" href="icon.png">
+		<link href="style.css" type="text/css" rel="stylesheet" />
+		<link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500|Mukta:300,400|Oswald:300,500" rel="stylesheet">
+	</head>
+
+	<body>
+		<header class="header proj" id="head">
+				<h1 id="name"><a href="Home.html">EMILY HUANG</a></h1>
+				<div id="nav">
+					<ul>
+						<li id="about"><a href="about.html">ABOUT ME</a></li>
+						<li id="portfolio"><a href="Home.html">ALL PROJECTS</a></li>
+						<hr noshade class="aboutline">
+						<hr noshade class="projline">
+					</ul>
+				</div>
+		</header>
+
+		<div class="hero adsom" id="heroimg">
+
+			<div class="herotext">
+				<h2 class="herotitle adsom">A DARKER SHADE OF MAGIC</h2>
+				<h3 class="herotag">BOOK DESIGN</h3>
+			</div>
+		</div>
+
+
+		<div class="sect intro" id="introid">
+			<div class="introtext">
+				<p>A redesign of <em>A Darker Shade of Magic</em> by V.E. Schwab.</p>
+				<p>A Darker Shade of Magic is an adventure of a magician and a thief in four parallel Londons: white, red, gray, and black. This book cover redesign captures the different Londons and each stacked on top of one another.</p>
+			</div>
+		</div>
+
+		<div class="sect vid">
+			<img src="img/adsom.jpg" alt="A Darker Shade of Magic"/>
+		</div>
+
+		<div class="function top">
+			<h2 class="subtitle">FOUR LONDONS</h2>
+			<img src="img/adsom-white.png" alt="White London"/>
+			<span> <hr noshade /></span>
+			<h3>WHITE LONDON</h3>
+			<p>A starving world where magic is abused and color and joy drained.</p>
+			<p>The background represents White London.</p>
+		</div>
+
+		<div class="function right">
+			<img src="img/adsom-red.png" alt="Red London"/>
+			<span> <hr noshade /></span>
+			<h3>RED LONDON</h3>
+			<p>A copious world flourising with magic and prospers with the help of magic.</p>
+			<p>"MAGIC" represents Red London.</p>
+		</div>
+
+		<div class="function">
+			<img src="img/adsom-gray.png" alt="Gray London"/>
+			<span> <hr noshade /></span>
+			<h3>GRAY LONDON</h3>
+			<p>A mundane world where magic is forgotten, and magic is scarce.</p>
+			<p>"SHADE" represents Gray London.</p>
+		</div>
+
+
+	<div class="function right">
+			<img src="img/adsom-black.png" alt="Black London"/>
+			<span> <hr noshade /></span>
+			<h3>BLACK LONDON</h3>
+			<p>A dead world crushed out of life and consumed by its greed for magic.</p>
+			<p>The word "DARKER" represents Black London.</p>
+		</div>
+	</div>
+
+	<div class="function top page"> 
+		<h2 class="subtitle">PAGE DESIGN</h2>
+		<img src="img/adsom-pg1.jpg" alt="Page 1"/>
+		<img src="img/adsom-pg2.jpg" alt="Page 2"/>
+		<img src="img/adsom-pg3.jpg" alt="Page 3"/>
+		<img src="img/adsom-pg4.jpg" alt="Page 4"/>
+	</div>
+
+	<div class="function top cover">
+		<h2 class="subtitle long">COVER DESIGN FOR EBOOK</h2>
+		<img src="img/adsom-cover1.gif" alt="Cover 1" id="coverGif"/>
+		<img src="img/adsom-cover2.gif" alt="Cover 2" id="bottom"/>
+	</div>
+
+		<div id="footer">
+			<p>&copy; Emily Huang</p>
+		</div>
+
+		<script>
+			window.onscroll = function() {textColor()};
+
+			var header = document.getElementById("head");
+			var intro = document.getElementById("introid");
+			var sticky = intro.offsetTop-500;
+
+			function textColor() {
+				if (window.pageYOffset > sticky) {
+					header.classList.remove("proj");
+				} else {
+					header.classList.add("proj");
+				}
+			}
+		</script>
+	</body>
+</html>

@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<head>
+		<title>Imprints</title>
+		<link rel="icon" type="image/png" href="icon.png">
+		<link href="style.css" type="text/css" rel="stylesheet" />
+		<link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500|Mukta:300,400|Oswald:300,500" rel="stylesheet">
+	</head>
+
+	<body>
+		<header class="header proj" id="head">
+				<h1 id="name"><a href="Home.html">EMILY HUANG</a></h1>
+				<div id="nav">
+					<ul>
+						<li id="about"><a href="about.html">ABOUT ME</a></li>
+						<li id="portfolio"><a href="Home.html">ALL PROJECTS</a></li>
+						<hr noshade class="aboutline">
+						<hr noshade class="projline">
+					</ul>
+				</div>
+		</header>
+
+		<div class="hero imprints" id="heroimg">
+			<div class="herotext">
+				<h2 class="herotitle">IMPRINTS</h2>
+				<h3 class="herotag">AR DESIGN</h3>
+			</div>
+		</div>
+
+		<div class="sect intro" id="introid">
+			<div class="introtext">
+				<h3>GIVE LIFE TO LOCATION.<br>COMMUNE WITH THE WORLD.<br>PEER THROUGH THE PAST.</h3>
+				<p>Imprints allows us to experience the reaction to the world around of passerby who came before us using augmented reality . You can leave letters, using words to compose how you feel or what you thought; or leave footprints, using motion capture to show how you interacted with the world; or leave mementos, a objects the commemorate the moment or location. This shares the stories of the location, of people living in or just passing through the location; this is raw, unedited human history, and a space for listening and understanding the community around us.</p>
+				<!--maybe move team elsewhere-->
+				<p>Collaborated with Jessica Cheung, Maxwell Crabill, and Casey Gustafson</p>
+			</div>
+		</div>
+
+		<div class="sect vid">
+			<div class="embed-container">
+				<iframe src="https://player.vimeo.com/video/265324824" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen align="center"></iframe>
+			</div>
+		</div>
+
+		
+		<div class="function top">
+			<h2 class="subtitle">FUNCTIONS</h2>
+			<img src="img/imprints-letter.png" alt="Letters"/>
+			<span> <hr noshade /></span>
+			<h3>LETTERS</h3>
+			<p>Record with voice, display as text.<br>By using a word bank, we encourage you to create what you want to say within constraints, and also filters out users who want to abuse the anonymity.</p>
+			<!--You can rate Letters up or down to increase or decrease the likelihood that they will be seen by future visitors.-->
+		</div>
+
+		<div class="function right">
+			<img src="img/imprints-footprint.png" alt="Footprints"/>
+			<span> <hr noshade /></span>
+			<h3>FOOTPRINTS</h3>
+			<p>Record with motion capture, view in 3D space.<br>You record yourself in the environment interacting with the world around, and they would manifest as anonymized ghosts devoid of features.</p>
+		</div>
+
+		<div class="function memento">
+			<img src="img/imprints-memento.png" alt="Mementos"/>
+			<span> <hr noshade /></span>
+			<h3>MEMENTOS</h3>
+			<p>Collected from different time and place<br>stored in a treasure chest<br>left for the world to see.</p>
+		</div>
+
+
+	<div class="function right">
+			<img src="img/imprints-historian.png" alt="Historian Imprints"/>
+			<span> <hr noshade /></span>
+			<h3>HISTORIAN IMPRINTS</h3>
+			<p>Curated locally by historians.<br>You will be able to view either text, snapshots of the changing city, or fully immersive event of the past.</p>
+		</div>
+
+
+		<div id="footer">
+			<p>&copy; Emily Huang</p>
+		</div>
+
+		<script>
+			window.onscroll = function() {textColor()};
+
+			var header = document.getElementById("head");
+			var intro = document.getElementById("introid");
+			var sticky = intro.offsetTop-500;
+
+			function textColor() {
+				if (window.pageYOffset > sticky) {
+					header.classList.remove("proj");
+				} else {
+					header.classList.add("proj");
+				}
+			}
+		</script>
+	</body>
+</html>

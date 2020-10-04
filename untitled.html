@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link href="style0.css" type="text/css" rel="stylesheet" />
+</head>
+	<body>
+		<header class="header" id="head">
+				<div id="nav">
+					<ul>
+						<div class="projline indiv" id="navdiv">
+						<a href="#top"><hr noshade class="btn"></a>
+						<a href="#middle"> <hr noshade class="btn active"></a>
+						<a href="#bottom"><hr noshade class="btn"></a>
+					</div>
+					</ul>
+				</div>
+		</header>
+<section id="top">
+    1
+</section>
+
+<section id="middle">
+    2
+</section>
+
+<section id="bottom">
+    3
+</section>
+
+
+<script>
+// Add active class to the current button (highlight it)
+var header = document.getElementById("navdiv");
+var btns = header.getElementsByClassName("btn");
+for (var i = 0; i < btns.length; i++) {
+  btns[i].addEventListener("click", function() {
+    var current = document.getElementsByClassName("active");
+    current[0].className = current[0].className.replace(" active", "");
+    this.className += " active";
+  });
+}
+</script>
+
+</body>
+</html>
+

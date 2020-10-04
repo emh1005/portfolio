@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<head>
+		<title>Plantagon</title>
+		<link rel="icon" type="image/png" href="icon.png">
+		<link href="style.css" type="text/css" rel="stylesheet" />
+		<link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500|Mukta:300,400|Oswald:300,500" rel="stylesheet">
+	</head>
+
+	<body>
+		<header class="header proj" id="head">
+				<h1 id="name"><a href="Home.html">EMILY HUANG</a></h1>
+				<div id="nav">
+					<ul>
+						<li id="about"><a href="about.html">ABOUT ME</a></li>
+						<li id="portfolio"><a href="Home.html">ALL PROJECTS</a></li>
+						<hr noshade class="aboutline">
+						<hr noshade class="projline">
+					</ul>
+				</div>
+		</header>
+
+		<div class="hero plantagon" id="heroimg">
+			<div class="herotext">
+				<h2 class="herotitle">PLANTAGON</h2>
+				<h3 class="herotag">PRODUCT DESIGN</h3>
+			</div>
+		</div>
+
+		<div class="sect intro" id="introid">
+			<div class="introtext">
+				<p>Plantagon is a home farm designed for those who are eager to learn how to grow their own food. Plantagon aims to enable people who live in homes without exterior space to grow different types of fruit and vegetables indoor and to educate amateur gardeners on how to grow plants. In the time and age where technology is prevalent in everyday life, Plantagon brings in technology yet uses it as an aid for learning and promote the interaction between human and technology. It also uses module system to accommodate different homes and environment, as well as encouraging people to learn.</p>
+				<p>Collaborated with Jessica Cheung</p>
+			</div>
+		</div>
+
+		<div class="sect vid">
+			<img src="img/plantagon.png" alt="Plantagon"/>
+		</div>
+
+		<div class="top introtext detail">
+			<h2 class="subtitle">MODULE SYSTEM</h2>
+			<p>The module system allows flexibility in the environment Plantagon is implemented. You can choose how many modules to attach based on the space your home has, and how many plants you want to grow.</p>
+		</div>
+		<div class="function">
+			<img src="img/plantagon-module.png" alt="Module"/>
+			<span> <hr noshade /></span>
+			<h3>LOCKING MECHANISM</h3>
+			<p>The hanger is nailed to the wall, while the modules and the main hub slide in to the hanger. The modules are powered through the main hub. Each module comes with sensors to monitor how the plants are doing and relay that information to you through the main hub.</p>
+		</div>
+
+		<div class="top introtext detail">
+			<h2 class="subtitle">LEARN HOW TO GROW PLANTS</h2>
+			<p>Plantagon is a system that educates people on how to grow plants; it doesn't grow your plants for you. By using sensors, Plantagon would understand how the plants are doing and relay that information to you through the main hub, and you can then act accordingly.</p>
+		</div>
+		<div class="function">
+			<video src="img/plantagon-home.mp4" autoplay loop muted></video>
+			<span> <hr noshade /></span>
+			<h3>GARDEN</h3>
+			<p>The main screen of Plantagon shows your garden and every plant you are currently growing.</p>
+		</div>
+
+		<div class="function right">
+			<video src="img/plantagon-tap.mp4" autoplay loop muted></video>
+			<span> <hr noshade /></span>
+			<h3>TAP</h3>
+			<p>When you tap on one of the plants, the current status and details of the plant would be displayed on screen and the module lights up to show the location of the plant.</p>
+		</div>
+		<div class="function">
+			<video src="img/plantagon-seeds.mp4" autoplay loop muted></video>
+			<span> <hr noshade /></span>
+			<h3>GERMINATION</h3>
+			<p>You start with choosing the plants they are planting in each module, and Plantagon would guide you step by step on how to prep the seeds for germination.</p>
+		</div>
+
+		<div class="function right">
+			<video src="img/plantagon-status.mp4" autoplay loop muted></video>
+			<span> <hr noshade /></span>
+			<h3>DIFFERET STATUS</h3>
+			<p>As the plants grow, the main hub shows their status, which includes being healthy, needing water or light, and ready to harvest. These also provides clues and tips to allow you to understand what the plant is trying to tell you.</p>
+		</div>
+
+		<div class="function">
+			<video src="img/plantagon-hint.mp4" autoplay loop muted></video>
+			<span> <hr noshade /></span>
+			<h3>HINTS</h3>
+			<p>By tapping the blue circles on the plant, you can learn more about how to recognize signs of your plants' status.</p>
+		</div>
+
+		<div id="footer">
+			<p>&copy; Emily Huang</p>
+		</div>
+
+		<script>
+			window.onscroll = function() {textColor()};
+
+			var header = document.getElementById("head");
+			var intro = document.getElementById("introid");
+			var sticky = intro.offsetTop-500;
+
+			function textColor() {
+				if (window.pageYOffset > sticky) {
+					header.classList.remove("proj");
+				} else {
+					header.classList.add("proj");
+				}
+			}
+		</script>
+	</body>
+</html>
