@@ -3,35 +3,52 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<head>
 		<title>Emily Huang</title>
+		<script src="jquery-3.6.0.js"></script>
+		<script src="https://code.jquery.com/jquery-3.6.0.min.js" type="text/javascript"></script>
 		<link rel="icon" type="image/png" href="icon.png">
 		<link href="style.css" type="text/css" rel="stylesheet" />
 		<link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500|Mukta:300,400|Oswald:300,500" rel="stylesheet">
+		<link href="slidein.css" rel="stylesheet" />
+		<script src="slideIn.js" type="text/javascript"></script>
+		<script src="transition.js" type="text/javascript"></script>
+
 	</head>
 
 	<body>
 		<header class="header" id="head">
-				<h1 id="name"><a href="Home.html">EMILY HUANG</a></h1>
+				<h1 id="name"><a href="/">EMILY HUANG</a></h1>
 				<div id="nav">
 					<ul>
-						<li id="about"><a href="about.html">ABOUT ME</a></li>
+						<li id="about"><a href="/about">ABOUT ME</a></li>
 						<!--<li id="portfolio"><a href="/">ALL PROJECTS</a></li>-->
 						<hr noshade class="aboutline">
 						<!--<hr noshade class="projline">-->
-						<div class="projline indiv" id="navdiv">
-							<a href="#plantagon"><hr noshade class="btn active"></a>
-							<a href="#imprints"><hr noshade class="btn"></a>
-							<a href="#kinector"><hr noshade class="btn"></a>
-							<a href="#secureme"><hr noshade class="btn"></a>
-							<a href="#adsom"><hr noshade class="btn"></a>
-						</div>
-					</ul>
+						<ul>
+						<!--<nav class="projline indiv section-nav" id="navdiv">
+							<ol>
+							<li><a href="#plantagon"><hr noshade class="btn"><span>Platagon</span></a></li>
+							<li><a href="#imprints"><hr noshade class="btn"><span>Imprints</span></a></li>
+							<li><a href="#kinector"><hr noshade class="btn"><span>Kinector</span></a></li>
+							<li><a href="#secureme"><hr noshade class="btn"><span>SecureMe</span></a></li>
+							<li><a href="#adsom"><hr noshade class="btn"><span>ADSOM</span></a></li>
+						</ol>
+					</nav>-->
+					<nav class="projline indiv section-nav" id="navdiv">
+						<ol>
+							<li><a href="#plantagon"><hr noshade class="btn"><span>PLANTAGON</span></a></li>
+							<li><a href="#imprints"><hr noshade class="btn"><span>IMPRINTS</span></a></li>
+							<li><a href="#kinector"><hr noshade class="btn"><span>KINECTOR</span></a></li>
+							<li><a href="#secureme"><hr noshade class="btn"><span>SECUREME</span></a></li>
+							<li><a href="#adsom"><hr noshade class="btn"><span>ADSOM</span></a></li>
+						</ol>
+					</nav>
+
 				</div>
 		</header>
 
-
 		<div id="whole">
-		<div id="plantagon" class="sep anchor">
-			<a href="plantagon.html">
+		<section id="plantagon" class="sep anchor js-slidein">
+			<a href="/plantagon">
 				<img class="img right" src="img/home-plantagon.png" alt="Plantagon">
 				<h3 class="tag right">PRODUCT DESIGN</h3>
 				<h2 class="title right plant">Plantagon</h2>
@@ -39,67 +56,56 @@
 				<span class="view right">VIEW</span>
 				<div id="clear"></div>
 			</a>
-		</div>
-<!--
-		<div id="kinector" class="sep anchor">
+		</section>
+
+		<section id="imprints" class="sep anchor">
+			<a href="/imprints">
+				<img class="img js-slidein-left" src="img/home-imprints.png" alt="Imprints">
+				<h3 class="tag js-slidein-right">AR DESIGN</h3>
+				<h2 class="title js-slidein-right">Imprints</h2>
+				<span> <hr noshade class="line" /></span>
+				<span class="view">VIEW</span>
+				<div id="clear"></div>
+			</a>
+		</section>
+
+		<section id="kinector" class="sep anchor">
 			<a href="/kinector">
-				<img class="img right" src="img/home-kinector.png" alt="Kinector">
-				<h3 class="tag right">DESIGN RESEARCH</h3>
-				<h2 class="title right">Kinector</h2>
+				<img class="img right js-slidein-right" src="img/home-kinector.png" alt="Kinector">
+				<h3 class="tag right js-slidein-left">DESIGN RESEARCH</h3>
+				<h2 class="title right js-slidein-left">Kinector</h2>
 				<span> <hr noshade class="line right" /></span>
 				<span class="view right">VIEW</span>
 				<div id="clear"></div>
 			</a>
-		</div>-->
+		</section>
 
-		<div id="imprints" class="sep anchor">
-			<a href="imprints.html">
-				<img class="img" src="img/home-imprints.png" alt="Imprints">
-				<h3 class="tag">AR DESIGN</h3>
-				<h2 class="title">Imprints</h2>
+		<section id="secureme" class="sep anchor">
+			<a href="/secureme">
+				<img class="img js-slidein-left" src="img/home-secureme.png" alt="SecureMe">
+				<h3 class="tag js-slidein-right">INTERACTION DESIGN</h3>
+				<h2 class="title js-slidein-right">SecureMe</h2>
 				<span> <hr noshade class="line" /></span>
 				<span class="view">VIEW</span>
 				<div id="clear"></div>
 			</a>
-		</div>
+		</section>
 
-		<div id="kinector" class="sep anchor">
-			<a href="kinector.html">
-				<img class="img right" src="img/home-kinector.png" alt="Kinector">
-				<h3 class="tag right">DESIGN RESEARCH</h3>
-				<h2 class="title right">Kinector</h2>
-				<span> <hr noshade class="line right" /></span>
-				<span class="view right">VIEW</span>
-				<div id="clear"></div>
-			</a>
-		</div>
-
-		<div id="secureme" class="sep anchor">
-			<a href="secureme.html">
-				<img class="img" src="img/home-secureme.png" alt="SecureMe">
-				<h3 class="tag">INTERACTION DESIGN</h3>
-				<h2 class="title">SecureMe</h2>
-				<span> <hr noshade class="line" /></span>
-				<span class="view">VIEW</span>
-				<div id="clear"></div>
-			</a>
-		</div>
-
-		<div id="adsom" class="sep last anchor">
-			<a href="adsom.html">
-				<img class="img right" src="img/home-adsom.png" alt="A Darker Shade of Magic">
-				<h3 class="tag adsom">BOOK DESIGN</h3>
-				<h2 class="title adsom">A Darker Shade of Magic</h2>
+		<section id="adsom" class="sep last anchor">
+			<a href="/adsom">
+				<img class="img right js-slidein-right" src="img/home-adsom.png" alt="A Darker Shade of Magic">
+				<h3 class="tag adsom js-slidein-left">BOOK DESIGN</h3>
+				<h2 class="title adsom js-slidein-left">A Darker Shade of Magic</h2>
 				<span> <hr noshade class="line right adsom" /></span>
 				<span class="view right adsom">VIEW</span>
 				<div id="clear"></div>
 			</a>
-		</div>
+		</section>
 </div>
 		<div id="footer">
 			<p>&copy; Emily Huang</p>
 		</div>
-
+<!--
 		<script>
 // Add active class to the current button (highlight it)
 var header = document.getElementById("navdiv");
@@ -118,5 +124,7 @@ for (var i = 0; i < btns.length; i++) {
 	var edgeOffset = 400 // px
 	zenscroll.setup(defaultDuration, edgeOffset)
  </script>
+-->
+ <script type="text/javascript" src="script.js"></script>
 	</body>
 </html>
