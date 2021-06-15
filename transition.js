@@ -41,7 +41,7 @@ $('.sep>a').click(function(e) {
 		}, 300);
 
 	setTimeout(function() {
-	window.location.href= 'file:///Users/v/Desktop/Portfolio%20Website%20v0' + url + '.html';
+	window.location.href= url';
 	}, 1200);
 	
 });
