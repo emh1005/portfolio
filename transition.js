@@ -41,7 +41,7 @@ $('.sep>a').click(function(e) {
 		}, 300);
 
 	setTimeout(function() {
-	window.location.href= url';
+	window.location.href= url;
 	}, 1200);
 	
 });
